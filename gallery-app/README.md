@@ -1,21 +1,65 @@
-# Recipe Gallery App
+# React Recipe Gallery & User Profile
 
-This is a React application that displays a gallery of recipe images.
+Author: Edgar
+
+This project is a React application built with Vite. It includes two main components:
+1. A Recipe Gallery with image navigation
+2. A User Profile with nested state updates
 
 ## Features
-- Navigate images using Next and Previous buttons
-- Displays image descriptions
-- Prevents navigation beyond limits
+
+### Recipe Gallery
+- Displays recipe images
+- Navigate using Next and Previous buttons
+- Prevents going beyond first and last images (boundary checks)
+
+### User Profile
+- Displays user information
+- Updates nested address data (street, city, country)
+- Uses immutable state updates with the spread operator
+
+## Concepts Used
+- React useState hook
+- Event handling
+- Conditional rendering
+- Nested state updates
+- Spread operator for immutability
+
+## Test Cases
+
+### Normal Cases
+- Navigate through images
+- Update all address fields
+- Update individual fields
+
+### Edge Cases
+- Prevent navigation beyond limits
+- Empty input does not overwrite existing data
+- Multiple updates do not break the app
 
 ## How to Run
 
-Initialize the project: 
-http://localhost:5173/
+1. Install dependencies:
 
-npm create vite@latest gallery-app -- --template react 
+npm install
 
-cd profile-app 
 
-npm install 
+2. Start the development server:
 
 npm run dev
+
+
+3. Open in browser:
+
+http://localhost:5173/
+
+
+## Project Structure
+
+
+src/
+├── App.jsx
+├── Gallery.jsx
+├── UserProfile.jsx
+├── Gallery.css
+├── UserProfile.css
