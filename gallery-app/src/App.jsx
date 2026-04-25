@@ -1,4 +1,5 @@
 import Gallery from "./Gallery";
+import TaskManager from "./TaskManager";
 import UserProfile from "./UserProfile";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div>
       <Gallery />
       <UserProfile />
+      <TaskManager />
     </div>
   );
 }
