@@ -1,0 +1,189 @@
+/* GLOBAL RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    min-height: 100vh;
+}
+
+/* MAIN CONTAINER */
+.container {
+    max-width: 650px;
+    margin: 60px auto;
+    padding: 25px;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADER */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #111827;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+/* INPUT GROUP */
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    transition: 0.2s;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+    outline: none;
+}
+
+/* BUTTONS */
+button {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+/* ADD BUTTON */
+button.add {
+    background: #6366f1;
+    color: white;
+}
+
+button.add:hover {
+    transform: translateY(-1px);
+    background: #4f46e5;
+}
+
+/* UPDATE */
+button.update {
+    background: #10b981;
+    color: white;
+}
+
+button.update:hover {
+    background: #059669;
+}
+
+/* DELETE */
+button.remove {
+    background: #ef4444;
+    color: white;
+}
+
+button.remove:hover {
+    background: #dc2626;
+}
+
+/* LIST */
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+/* CARD ITEM */
+li {
+    background: #f9fafb;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 12px;
+    border: 1px solid #f1f5f9;
+    transition: 0.2s;
+}
+
+li:hover {
+    transform: scale(1.01);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* ITEM CONTENT */
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-name {
+    font-weight: 600;
+    color: #111827;
+}
+
+.item-qty {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* NOTES */
+.item-notes {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* BUTTON ROW */
+.actions {
+    margin-top: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .form-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* ENTER ANIMATION */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+li {
+    animation: fadeInUp 0.3s ease;
+}
+
+/* REMOVE ANIMATION */
+.removing {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+}
