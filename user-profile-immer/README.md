@@ -1,4 +1,4 @@
-# User Profile with useImmer
+# User Profile with useImmer Hook
 Author: Edgar
 ## Description
 A React app demonstrating complex nested state management using useImmer.
