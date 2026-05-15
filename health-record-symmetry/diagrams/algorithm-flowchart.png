@@ -1,0 +1,16 @@
+Start
+   ↓
+Is list empty or one node?
+   ↓
+Yes → Return True
+   ↓ No
+Find middle using fast/slow pointers
+   ↓
+Reverse second half
+   ↓
+Compare first half and second half
+   ↓
+Do all values match?
+   ↓
+Yes → Return True
+No  → Return False
