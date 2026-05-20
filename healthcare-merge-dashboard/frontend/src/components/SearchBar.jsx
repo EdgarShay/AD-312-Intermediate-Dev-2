@@ -1,0 +1,28 @@
+export default function SearchBar({
+    search,
+    setSearch,
+}) {
+
+    return (
+
+        <div className="search-card">
+
+            <h2>Search by SSN</h2>
+
+            <input
+                type="text"
+
+                placeholder="Search SSN"
+
+                value={search}
+
+                onChange={(e) =>
+                    setSearch(e.target.value)
+                }
+
+                className="search"
+            />
+
+        </div>
+    );
+}
