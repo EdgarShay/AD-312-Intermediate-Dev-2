@@ -1,0 +1,101 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+
+  font-family: Arial, sans-serif;
+
+  background:
+    linear-gradient(135deg,
+      #0f172a,
+      #1e293b);
+
+  min-height: 100vh;
+
+  color: white;
+
+}
+
+.app {
+
+  padding: 40px;
+
+}
+
+.dashboard {
+
+  max-width: 1000px;
+
+  margin: auto;
+
+  background:
+    rgba(255, 255, 255, .06);
+
+  padding: 40px;
+
+  border-radius: 25px;
+
+  backdrop-filter: blur(15px);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, .3);
+
+}
+
+.dashboard h1 {
+
+  text-align: center;
+
+  margin-bottom: 40px;
+
+}
+
+.sidebar {
+
+  background:
+    rgba(255, 255, 255, .05);
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+}
+
+.sidebar h2 {
+
+  margin-bottom: 20px;
+
+}
+
+.profile-card {
+
+  background:
+    rgba(255, 255, 255, .08);
+
+  padding: 25px;
+
+  border-radius: 20px;
+
+  transition: .4s;
+
+}
+
+.profile-card:hover {
+
+  transform:
+    translateY(-8px);
+
+}
+
+.user-info p {
+
+  margin: 15px 0;
+
+  font-size: 18px;
+
+}
