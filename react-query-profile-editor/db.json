@@ -1,0 +1,10 @@
+{
+  "profile": {
+    "id": 1,
+    "username": "johnsmith",
+    "email": "conflic@example.com",
+    "bio": "Software developer and react enthusiast.",
+    "notifications": true
+  },
+  "$schema": "./node_modules/json-server/schema.json"
+}
