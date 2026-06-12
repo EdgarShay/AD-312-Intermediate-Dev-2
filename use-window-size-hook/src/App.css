@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mobile,
+.desktop {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile {
+  background-color: orange;
+}
+
+.desktop {
+  background-color: lightblue;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+}
